@@ -1,5 +1,5 @@
 .notification-bar {
-    top:-100px;
+    top: -500px;
     position: relative;
     border: 1px solid #7f9a40;
     background: #9fc150;
@@ -11,7 +11,23 @@
 }
 
 .notification-bar.enabled {
-    top:0px;
+    top: 200px;
+}
+
+.notification-barTwo {
+    top: 110vh;
+    position: relative;
+    border: 1px solid #7f9a40;
+    background: #9fc150;
+    border-radius: 5px;
+    padding: 5px;
+    border-bottom-width: 2.5px !important;
+    font-family: monospace;
+    text-align: center;
+}
+
+.notification-barTwo.enabled {
+    top: 620px;
 }
 
 .animatedCSS {
@@ -20,4 +36,14 @@
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+.animate {
+    animation:spin 2s linear infinite;
+}
+
+
+
+@keyframes spin {
+    100% {transform: rotate3d(360, 360, 360, 360deg);}
 }
